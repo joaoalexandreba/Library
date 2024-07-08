@@ -1,0 +1,37 @@
+{% extends 'baseGenerica.html' %} <!--Herança-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block title %}
+    <title>Biblioteca Local</title>
+    {% endblock %}
+</head>
+
+<body>
+    {% block sidebar %}
+    <!---->
+    {% endblock %}
+
+    {% block content %}
+    <h1>Home da nossa Biblioteca Local</h1>
+    <p>Bem vindo a Biblioteca Local, um website desenvolvido por <a
+        href="https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Django/Tutorial_local_library_website">Mozila 
+        Developer Network</a></p>
+    <p>
+        <ul>
+            <li><strong>Quantidade de livros:</strong>{{numeroDeLivros}}
+            <li><strong>Quantidade de cópias:</strong>{{numeroDeCopias}}
+            <li><strong>Número de Autores:</strong>{{numeroDeAutores}}
+            <li><strong>Número de Gêneros:</strong>{{generos}}
+            <li><strong>Número de Gêneros:</strong>{{contarLivrosKeyword}}
+            
+            </li>
+        </ul>
+    </p>
+
+
+
+    {% endblock %}
+</body>
+</html>
